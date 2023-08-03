@@ -24,11 +24,6 @@ class MahasiswaController extends Controller
         return redirect()->route('mahasiswa.index')->with('success', 'Data mahasiswa berhasil ditambahkan');
     }
 
-    public function show($id)
-    {
-        $mahasiswa = Mahasiswa::find($id);
-        return view('mahasiswa.show', compact('mahasiswa'));
-    }
 
 }
 
